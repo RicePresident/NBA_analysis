@@ -19,7 +19,7 @@ stats_15_16
 
 # stats.iloc[:3,:3]
 
-print('-'*50)
+# ------------------------------------------------
 
 counts = df1['Player'].value_counts()
 
@@ -27,7 +27,7 @@ counts = df1['Player'].value_counts()
 
 df1[df1['Player'].isin(counts.index[counts > 1])]
 
-print('-'*50)
+# ------------------------------------------------
 
 results = stats_15_16.drop_duplicates(['Player'], keep = 'first')
 
